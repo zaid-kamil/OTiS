@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "291373921501",
+    "firebase_url": "https://mptr-digi.firebaseio.com",
+    "project_id": "mptr-digi",
+    "storage_bucket": "mptr-digi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291373921501:android:657c67fb89a723d4",
+        "android_client_info": {
+          "package_name": "digipodium.otis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291373921501-gfgmmphjsgl8v5joh8uarqbtt7qq4141.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "digipodium.otis",
+            "certificate_hash": "934854ceac6ad282eeeed03e26377e79a3bfd80b"
+          }
+        },
+        {
+          "client_id": "291373921501-oe0p092ucllhbi4acta265n66942gaeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlkGJKfxeh0-IrFdCQXBAB5k07dzclyc8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291373921501-oe0p092ucllhbi4acta265n66942gaeb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

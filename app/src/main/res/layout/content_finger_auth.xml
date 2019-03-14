@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".FingerAuthActivity"
+    tools:showIn="@layout/activity_finger_auth">
+
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:id="@+id/constraintLayout"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:background="#fff"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="1.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintVertical_bias="1.0">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView8"-->
+    <!--android:layout_width="363dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Please put your finger for final Authentication"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textStyle="bold"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/imageView"-->
+    <!--tools:layout_editor_absoluteX="8dp" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView"-->
+    <!--android:layout_width="64dp"-->
+    <!--android:layout_height="64dp"-->
+    <!--app:srcCompat="@drawable/ic_fingerprint_black_24dp"-->
+    <!--tools:layout_editor_absoluteX="157dp"-->
+    <!--tools:layout_editor_absoluteY="112dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView9"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:background="@android:drawable/editbox_background_normal"-->
+    <!--android:padding="16dp"-->
+    <!--android:text="We have a added layer of security that is not available in most payment app. "-->
+    <!--android:textAlignment="center"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/textView8" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="@string/description_bugdroid_icon"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_fingerprint_error" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:paddingLeft="32dp"
+            android:paddingTop="32dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="32dp"
+            android:text="click on the yellow button below  and then Please confirm registration by putting your finger on the fingerprint sensor "
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/purchase_button"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/purchase"
+            android:textColor="?android:attr/textColorPrimaryInverse"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/purchase_button_not_invalidated"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/purchase_not_invalidated"
+            android:textColor="?android:attr/textColorPrimaryInverse"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/confirmation_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/purchase_done"
+            android:textAppearance="@android:style/TextAppearance.Material.Body2"
+            android:textColor="?android:attr/colorAccent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/encrypted_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/purchase_done"
+            android:textAppearance="@android:style/TextAppearance.Material.Body2"
+            android:textColor="?android:attr/colorAccent"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

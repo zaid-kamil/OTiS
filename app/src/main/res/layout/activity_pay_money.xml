@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:backgroundTint="#333"
+    android:backgroundTintMode="multiply"
+    tools:context=".PayMoneyActivity">
+
+    <TextView
+        android:id="@+id/textPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="136dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Person Name" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="enter a the amount pay "
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPersonName" />
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:drawableLeft="@drawable/ic_monetization_on_whitte_24dp"
+        android:drawablePadding="12dp"
+        android:ems="8"
+        android:hint="0.00"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:text="00.00"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:text="0.00" />
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:drawablePadding="16dp"
+        android:text="continue securely"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="bank name"
+
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editBank"
+        app:layout_constraintTop_toBottomOf="@+id/editAmount" />
+
+    <EditText
+        android:id="@+id/editBank"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:text="Bank Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="62dp"
+        android:text="Bank's IFSC code"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/editIFSC"
+        app:layout_constraintTop_toTopOf="@+id/editBank" />
+
+    <EditText
+        android:id="@+id/editIFSC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:text="29010"
+        app:layout_constraintEnd_toEndOf="@+id/editBank"
+        app:layout_constraintStart_toStartOf="@+id/editBank"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="236dp"
+        android:text="Bank Account No"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editAccountNo" />
+
+    <EditText
+        android:id="@+id/editAccountNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:text="12831283929"
+        app:layout_constraintEnd_toEndOf="@+id/editIFSC"
+        app:layout_constraintStart_toStartOf="@+id/editIFSC"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+</android.support.constraint.ConstraintLayout>
